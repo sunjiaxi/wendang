@@ -1,0 +1,250 @@
+Last login: Fri Aug 24 11:05:34 on ttys001
+sunjiaxideMacBook-Pro:~ sunjiaxi$ 
+sunjiaxideMacBook-Pro:~ sunjiaxi$ 
+sunjiaxideMacBook-Pro:~ sunjiaxi$ 
+sunjiaxideMacBook-Pro:~ sunjiaxi$ 
+sunjiaxideMacBook-Pro:~ sunjiaxi$ cd /etc
+sunjiaxideMacBook-Pro:etc sunjiaxi$ ls
+afpovertcp.cfg                        irbrc                                 pf.anchors
+aliases                               kern_loader.conf                      pf.conf
+aliases.db                            krb5.keytab                           pf.os
+apache2                               localtime                             php-fpm.conf.default
+asl                                   locate.rc                             php.ini
+asl.conf                              mach_init.d                           php.ini.default
+auto_home                             mach_init_per_login_session.d         postfix
+auto_master                           mach_init_per_user.d                  ppp
+autofs.conf                           mail.rc                               profile
+bashrc                                man.conf                              protocols
+bashrc_Apple_Terminal                 manpaths                              racoon
+com.apple.screensharing.agent.launchd manpaths.d                            rc.common
+csh.cshrc                             master.passwd                         rc.netboot
+csh.login                             nanorc                                resolv.conf
+csh.logout                            networks                              rmtab
+cups                                  newsyslog.conf                        rpc
+defaults                              newsyslog.d                           rtadvd.conf
+dnsextd.conf                          nfs.conf                              security
+efax.rc                               notify.conf                           services
+emond.d                               ntp-restrict.conf                     shells
+find.codes                            ntp.conf                              snmp
+fstab.hd                              ntp_opendirectory.conf                ssh
+ftpd.conf                             openldap                              sudo_lecture
+ftpd.conf.default                     pam.d                                 sudoers
+ftpusers                              passwd                                syslog.conf
+gettytab                              paths                                 ttys
+group                                 paths.d                               xtab
+hosts                                 pear.conf                             zprofile
+hosts.equiv                           periodic                              zshrc
+sunjiaxideMacBook-Pro:etc sunjiaxi$ sudo vim hosts
+Password:
+sunjiaxideMacBook-Pro:etc sunjiaxi$ 
+sunjiaxideMacBook-Pro:etc sunjiaxi$ 
+sunjiaxideMacBook-Pro:etc sunjiaxi$ 
+sunjiaxideMacBook-Pro:etc sunjiaxi$ 
+sunjiaxideMacBook-Pro:etc sunjiaxi$ 
+sunjiaxideMacBook-Pro:etc sunjiaxi$ 
+sunjiaxideMacBook-Pro:etc sunjiaxi$ cd
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker images
+REPOSITORY              TAG                 IMAGE ID            CREATED             SIZE
+mongo                   3.4                 15327bfd44e0        2 months ago        361MB
+aerospike               latest              1918a84f1644        2 months ago        198MB
+ubuntu                  14.04               578c3e61a98c        2 months ago        223MB
+postgres                9.6-alpine          8afa85e82472        3 months ago        39.2MB
+redis                   3.2-alpine          ca0b6709748d        3 months ago        20.7MB
+mysql                   5.7                 0d16d0a97dd1        3 months ago        372MB
+nginx                   latest              b175e7467d66        4 months ago        109MB
+php                     5.6-fpm             b755db32196e        4 months ago        368MB
+redis                   3.2                 b05c3d76c8b3        5 months ago        99.7MB
+mysql                   5.6                 079344ce5ebd        5 months ago        256MB
+mongo                   3.2                 4ece83276ddb        5 months ago        300MB
+memcached               1.4-alpine          273374b463b8        13 months ago       7.68MB
+phalconphp/beanstalkd   1.10                49960f31638a        14 months ago       41.9MB
+elasticsearch           5.2-alpine          81649f0ffe44        17 months ago       123MB
+phpmyadmin/phpmyadmin   4.6                 d0d00ab037a1        17 months ago       102MB
+training/webapp         latest              6fae60ef3446        3 years ago         349MB
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker pull registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout:latest
+latest: Pulling from base-doing/centos-nginx-phalcon-stdout
+7dc0dca2b151: Pull complete 
+9ba5b2eddc69: Pull complete 
+9f316c13abe2: Pull complete 
+2ad6b887e53a: Pull complete 
+Digest: sha256:e5ae521d673f5233468b05570e9d59c8296e2ef820c94f1f7e72478846661a80
+Status: Downloaded newer image for registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout:latest
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker images
+REPOSITORY                                                                TAG                 IMAGE ID            CREATED             SIZE
+registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout   latest              cfcb8228eb83        5 weeks ago         505MB
+mongo                                                                     3.4                 15327bfd44e0        2 months ago        361MB
+aerospike                                                                 latest              1918a84f1644        2 months ago        198MB
+ubuntu                                                                    14.04               578c3e61a98c        2 months ago        223MB
+postgres                                                                  9.6-alpine          8afa85e82472        3 months ago        39.2MB
+redis                                                                     3.2-alpine          ca0b6709748d        3 months ago        20.7MB
+mysql                                                                     5.7                 0d16d0a97dd1        3 months ago        372MB
+nginx                                                                     latest              b175e7467d66        4 months ago        109MB
+php                                                                       5.6-fpm             b755db32196e        4 months ago        368MB
+redis                                                                     3.2                 b05c3d76c8b3        5 months ago        99.7MB
+mysql                                                                     5.6                 079344ce5ebd        5 months ago        256MB
+mongo                                                                     3.2                 4ece83276ddb        5 months ago        300MB
+memcached                                                                 1.4-alpine          273374b463b8        13 months ago       7.68MB
+phalconphp/beanstalkd                                                     1.10                49960f31638a        14 months ago       41.9MB
+elasticsearch                                                             5.2-alpine          81649f0ffe44        17 months ago       123MB
+phpmyadmin/phpmyadmin                                                     4.6                 d0d00ab037a1        17 months ago       102MB
+training/webapp                                                           latest              6fae60ef3446        3 years ago         349MB
+sunjiaxideMacBook-Pro:~ sunjiaxi$ pwd
+/Users/sunjiaxi
+sunjiaxideMacBook-Pro:~ sunjiaxi$ cd
+sunjiaxideMacBook-Pro:~ sunjiaxi$ mkdir htdocs
+sunjiaxideMacBook-Pro:~ sunjiaxi$ cd htdocs/
+sunjiaxideMacBook-Pro:htdocs sunjiaxi$ ls
+sunjiaxideMacBook-Pro:htdocs sunjiaxi$ git clone git@git.hy-sport.cn:server/doing_bi.git
+Cloning into 'doing_bi'...
+remote: Counting objects: 2668, done.
+remote: Compressing objects: 100% (1982/1982), done.
+remote: Total 2668 (delta 573), reused 2536 (delta 495)
+Receiving objects: 100% (2668/2668), 13.07 MiB | 734.00 KiB/s, done.
+Resolving deltas: 100% (573/573), done.
+sunjiaxideMacBook-Pro:htdocs sunjiaxi$ docker run -d -p 8085:80 -v ~/htdocs/doing_bi:/var/www/html --name doing-bi registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout:latest
+f69ff2cbd5c84ae173dbf93c944b39934270efdf698c543f6b29a16597fe6d14
+sunjiaxideMacBook-Pro:htdocs sunjiaxi$ docker ps
+CONTAINER ID        IMAGE                                                                            COMMAND                  CREATED             STATUS              PORTS                           NAMES
+f69ff2cbd5c8        registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout:latest   "supervisord -c /etc…"   2 seconds ago       Up 1 second         443/tcp, 0.0.0.0:8085->80/tcp   doing-bi
+sunjiaxideMacBook-Pro:htdocs sunjiaxi$ cd doing_bi/
+sunjiaxideMacBook-Pro:doing_bi sunjiaxi$ ls
+application   bin           composer.json composer.lock docs          library       public        vendor
+sunjiaxideMacBook-Pro:doing_bi sunjiaxi$ cd application/logs/
+sunjiaxideMacBook-Pro:logs sunjiaxi$ ls
+development.log  sql_20180824.log
+sunjiaxideMacBook-Pro:logs sunjiaxi$ mkdir -p compiled-templates/bi
+sunjiaxideMacBook-Pro:logs sunjiaxi$ 
+sunjiaxideMacBook-Pro:logs sunjiaxi$ 
+sunjiaxideMacBook-Pro:logs sunjiaxi$ 
+sunjiaxideMacBook-Pro:logs sunjiaxi$ 
+sunjiaxideMacBook-Pro:logs sunjiaxi$ ls
+compiled-templates development.log    sql_20180824.log
+sunjiaxideMacBook-Pro:logs sunjiaxi$ ll
+-bash: ll: command not found
+sunjiaxideMacBook-Pro:logs sunjiaxi$ ls -l
+total 0
+drwxr-xr-x  3 sunjiaxi  staff  102  8 24 11:29 compiled-templates
+-rw-r--r--  1 sunjiaxi  staff    0  8 24 11:28 development.log
+-rw-r--r--  1 sunjiaxi  staff    0  8 24 11:28 sql_20180824.log
+sunjiaxideMacBook-Pro:logs sunjiaxi$ cd
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker pull hub.c.163.com/library/redis:latest
+latest: Pulling from library/redis
+3d59d0c51bb7: Pull complete 
+fa7bbc6b37ad: Pull complete 
+e945d1598847: Pull complete 
+9092a5d0a502: Pull complete 
+a088f4159516: Pull complete 
+4156899232a5: Pull complete 
+Digest: sha256:373f1f476089724ae20e555a5709f876f319f1b08613020232064f38feb0ae3d
+Status: Downloaded newer image for hub.c.163.com/library/redis:latest
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker ps
+CONTAINER ID        IMAGE                                                                            COMMAND                  CREATED             STATUS              PORTS                           NAMES
+f69ff2cbd5c8        registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout:latest   "supervisord -c /etc…"   42 minutes ago      Up 42 minutes       443/tcp, 0.0.0.0:8085->80/tcp   doing-bi
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker images
+REPOSITORY                                                                TAG                 IMAGE ID            CREATED             SIZE
+registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout   latest              cfcb8228eb83        5 weeks ago         505MB
+mongo                                                                     3.4                 15327bfd44e0        2 months ago        361MB
+aerospike                                                                 latest              1918a84f1644        2 months ago        198MB
+ubuntu                                                                    14.04               578c3e61a98c        2 months ago        223MB
+postgres                                                                  9.6-alpine          8afa85e82472        3 months ago        39.2MB
+redis                                                                     3.2-alpine          ca0b6709748d        3 months ago        20.7MB
+mysql                                                                     5.7                 0d16d0a97dd1        3 months ago        372MB
+nginx                                                                     latest              b175e7467d66        4 months ago        109MB
+php                                                                       5.6-fpm             b755db32196e        4 months ago        368MB
+redis                                                                     3.2                 b05c3d76c8b3        5 months ago        99.7MB
+mysql                                                                     5.6                 079344ce5ebd        5 months ago        256MB
+mongo                                                                     3.2                 4ece83276ddb        5 months ago        300MB
+hub.c.163.com/library/redis                                               latest              d4f259423416        13 months ago       106MB
+memcached                                                                 1.4-alpine          273374b463b8        13 months ago       7.68MB
+phalconphp/beanstalkd                                                     1.10                49960f31638a        14 months ago       41.9MB
+elasticsearch                                                             5.2-alpine          81649f0ffe44        17 months ago       123MB
+phpmyadmin/phpmyadmin                                                     4.6                 d0d00ab037a1        17 months ago       102MB
+training/webapp                                                           latest              6fae60ef3446        3 years ago         349MB
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker run -d -p 6378:6379 hub.c.163.com/library/redis:latest
+70b8da9dee8bf46eb2e90c7f320748d2dff005d41b9e9987ea2c4652fc46c576
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker ps
+CONTAINER ID        IMAGE                                                                            COMMAND                  CREATED                  STATUS              PORTS                           NAMES
+70b8da9dee8b        hub.c.163.com/library/redis:latest                                               "docker-entrypoint.s…"   Less than a second ago   Up 1 second         0.0.0.0:6378->6379/tcp          youthful_kapitsa
+f69ff2cbd5c8        registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout:latest   "supervisord -c /etc…"   43 minutes ago           Up 43 minutes       443/tcp, 0.0.0.0:8085->80/tcp   doing-bi
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker stop f69
+f69
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker rm f69
+f69
+sunjiaxideMacBook-Pro:~ sunjiaxi$ history | grep docker
+   84  docker-compose down
+   85  docker-compose up -d
+   86  docker logs
+   87  docker ps
+   96  docker images
+  150  sudo find -name docker
+  151  sudo find  ./ -name docker
+  152  whereis docker
+  159  docker ps
+  160  docker images
+  170  docker ps
+  171  sudo docker attach a8f55d1372ca
+  178  docker ps
+  179  docker attach 51b67efbd475
+  180  docker ps
+  181  docker-compose down
+  183  docker image
+  184  docker images
+  185  sudo docker run -t -i ubuntu:14.04 /bin/bash
+  186  docker ps
+  187  docker start
+  188  docker images
+  189  docker ps -a
+  190  docker rm blissful_bell
+  191  docker ps -a
+  192  docker start trusting_bose
+  193  docker ps
+  194  docker attach trusting_bose
+  195  docker ps
+  196  docker ps -
+  197  docker ps -a
+  198  docker start trusting_bose
+  199  docker ps
+  201  docker attach trusting_bose
+  202  docker ps
+  454  docker images
+  455  docker rmi phalcon_app
+  456  docker images
+  457  docker rmi v
+  458  docker rmi phalconphp/php-apache 
+  459  docker rmi phalconphp/php-apache
+  460  docker rmi 2743a216fc05
+  461  docker images
+  462  docker ps
+  463  docker logs
+  499  docker
+  500  docker images
+  505  docker images
+  506  docker pull registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout:latest
+  507  docker images
+  514  docker run -d -p 8085:80 -v ~/htdocs/doing_bi:/var/www/html --name doing-bi registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout:latest
+  515  docker ps
+  525  docker pull hub.c.163.com/library/redis:latest
+  526  docker ps
+  527  docker images
+  528  docker run -d -p 6378:6379 hub.c.163.com/library/redis:latest
+  529  docker ps
+  530  docker stop f69
+  531  docker rm f69
+  532  history | grep docker
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker run -d -p 8085:80 -v ~/htdocs/doing_bi:/var/www/html --name doing-bi registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout:latest
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker ps
+CONTAINER ID        IMAGE                                COMMAND                  CREATED             STATUS              PORTS                    NAMES
+70b8da9dee8b        hub.c.163.com/library/redis:latest   "docker-entrypoint.s…"   39 seconds ago      Up 40 seconds       0.0.0.0:6378->6379/tcp   youthful_kapitsa
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker stop 70b8da9dee8b
+do70b8da9dee8b
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker rm 70b8da9dee8b
+70b8da9dee8b
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker run -d -p 6378:6379 --name myredis hub.c.163.com/library/redis:latest
+d54a7e2919c4aaa589d1175223f443287d69492ac46382bd75e5b445d7f18fc7
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker run -d -p 8085:80 -v ~/htdocs/doing_bi:/var/www/html --link myredis:myredis --name doing-bi registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout:latest
+41a4e9114ece068ac7f0af39adef34d1741c3e86f19d86afda17a56767510bcc
+sunjiaxideMacBook-Pro:~ sunjiaxi$ docker ps
+CONTAINER ID        IMAGE                                                                            COMMAND                  CREATED                  STATUS              PORTS                           NAMES
+41a4e9114ece        registry.cn-beijing.aliyuncs.com/base-doing/centos-nginx-phalcon-stdout:latest   "supervisord -c /etc…"   Less than a second ago   Up 1 second         443/tcp, 0.0.0.0:8085->80/tcp   doing-bi
+d54a7e2919c4        hub.c.163.com/library/redis:latest                                               "docker-entrypoint.s…"   34 seconds ago           Up 35 seconds       0.0.0.0:6378->6379/tcp          myredis
+sunjiaxideMacBook-Pro:~ sunjiaxi$ 
